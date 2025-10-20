@@ -40,12 +40,11 @@
             background: #F3F3F3;
             border-radius: 12px;
             padding: 24px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s;
             min-height: 250px;
             flex: 0 1 calc(50% - 10px);
             min-width: 280px;
@@ -53,7 +52,6 @@
 
         .review-widget-card:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
         }
 
         /* Center single card in last row */
@@ -155,45 +153,61 @@
             const reviewWidgetData = [
                 {
                     rating: 5,
-                    text: "¡Gran complemento! Recomiendo encarecidamente el plugin 'Elfsight'.",
-                    imgUrl: "https://elfsight.com/wp-content/uploads/2018/05/20621224_10155665367614533_1770015599887277422_n.jpg",
-                    fullName: "Marlon Daniel Chancas Palacios",
-                    state: "Canada",
-                    city: "Canada City"
-                },
-                {
-                    rating: 4.5,
-                    text: "Excellent service and very user-friendly interface. The support team is incredibly responsive!",
-                    imgUrl: "https://elfsight.com/wp-content/uploads/2018/05/Rectangle-8.jpg",
-                    fullName: "Sarah Johnson",
-                    state: "Nigeria",
-                    city: "Nigeria City"
+                    text: "I was nervous about trying another program, but on the very first day I used Crypto Wealth Mastery, I made $187. I couldn’t believe it actually worked that fast!",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536484/file/86a43a9be6679247e75a47b20e1c1bae.png",
+                    fullName: "Dana R.",
+                    state: "AZ",
+                    city: "Phoenix"
                 },
                 {
                     rating: 5,
-                    text: "Amazing product! It exceeded all my expectations and the installation was seamless.",
-                    imgUrl: "https://elfsight.com/wp-content/uploads/2018/05/19260399_866327526838923_1568584963877943145_n.jpg",
-                    fullName: "Michael Chen",
-                    state: "Norway",
-                    city: "Norway City"
+                    text: "I’ve tried stock trading, forex, even a few crypto ‘gurus’, and I always ended up losing. But this system is different. Within 7 weeks, I turned a few hundred bucks from an airdrop into over $9,000. It feels like I finally beat the system!",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536483/file/67fc1857e89587e067540435413656c4.png",
+                    fullName: "Callum T.",
+                    state: "TX",
+                    city: "Dallas"
                 },
                 {
-                    rating: 4,
-                    text: "Good value for money. The features are comprehensive and well-documented.",
-                    imgUrl: "https://elfsight.com/wp-content/uploads/2018/05/r-Copy.jpg",
-                    fullName: "Emma Davis",
-                    state: "Sweden",
-                    city: "Sweden City"
+                    rating: 5,
+                    text: "Before this, I was drowning in debt and terrified of retirement. I started with no crypto knowledge at all, but this program made it easy. In my first month, I wiped out a $2,500 credit card bill using profits from a single coin the system helped me spot. For the first time, I feel like I’m steering my own finances instead of being controlled by them.",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536486/file/e9176c46544cdf81002bbbf89a59f8c5.png",
+                    fullName: "Daniel W.",
+                    state: "IL",
+                    city: "Chicago"
                 },
                 {
-                    rating: 4,
-                    text: "Good value for money. The features are comprehensive and well-documented.",
-                    imgUrl: "https://elfsight.com/wp-content/uploads/2018/05/r-Copy.jpg",
-                    fullName: "Emma Davis",
-                    state: "Sweden",
-                    city: "Sweden City"
+                    rating: 5,
+                    text: "I used to spend hours staring at crypto charts, second-guessing every move. With Crypto Wealth Mastery, I don’t need to be an expert. I just follow the system, and I’ve already found 3 winning coins. One of them shot up 1,200% and that trade alone could cover my daughter’s college tuition. I finally feel like I’m ahead of the game.",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536482/file/455d28fcbe0bbcb308d8efddcdde43b4.png",
+                    fullName: "Sarah M.",
+                    state: "FL",
+                    city: "Tampa"
+                },
+                {
+                    rating: 5,
+                    text: "It’s kind of crazy, but on Day 2 of using the program, I literally got $436 in my account, before I even invested a dime of my own money. And that’s when I knew this was the real deal. It really is a game changer and I highly recommend it!",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536488/file/2ce1daf702a3c824ec0c839fe66b7c00.png",
+                    fullName: "Rowan D.",
+                    state: "Vancouver",
+                    city: "Canada"
+                },
+                {
+                    rating: 5,
+                    text: "I’ve been burned by bad investments before, so I was skeptical. But this made everything simple. The system helped me find a coin that skyrocketed within days, and I cashed out at $14,300 profit. Now I’ve got confidence, clarity, and results I never thought possible. Thank you so much!",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536481/file/40056a2bfc4c1ff8feecbbd03a41acb0.png",
+                    fullName: "Jennifer H.",
+                    state: "CA",
+                    city: "San Diego"
+                },
+                {
+                    rating: 5,
+                    text: "On the very first day, I used the Crypto Airdrop Secrets bonus and earned $92 in free crypto. On Day 2, I made another $180. That alone more than repaid what I spent on the program before I even touched the main system! Everything after that has been pure profit.",
+                    imgUrl: "https://statics.myclickfunnels.com/workspace/vNWRYw/image/18536485/file/4a0a6af49d508a80488a12e2a22419cc.png",
+                    fullName: "Anthony L.",
+                    state: "NY",
+                    city: "New York"
                 }
-            ];
+                ];
 
             function createReviewStar(type = 'filled', uniqueId) {
                 if (type === 'filled') {
